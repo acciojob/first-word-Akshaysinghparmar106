@@ -24,3 +24,9 @@ function firstWord(s) {
 
 const s = prompt("Enter String:");
 alert(firstWord(s));
+console.log(firstWord('see and stop'));      // 'see'
+console.log(firstWord(' Hello World!'));     // 'Hello'
+console.log(firstWord('12345'));             // '12345'
+console.log(firstWord(''));                  // ''
+console.log(firstWord('   leading space'));  // 'leading'
+console.log(firstWord('word'));              // 'word'
