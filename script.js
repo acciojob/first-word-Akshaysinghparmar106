@@ -1,9 +1,22 @@
 function firstWord(s) {
   // your code here
-	firstWord('see and stop');    // 'see'
-firstWord(' Hello World!');   // 'Hello'
-firstWord('12345');           // '12345'
-firstWord('');                // ''
+	function firstWord(str) {
+  // Trim leading spaces
+  str = str.trim();
+
+  // If the string is empty after trimming, return empty string
+  if (str === "") return "";
+
+  // Find the first space
+  const spaceIndex = str.indexOf(" ");
+
+  // If no space found, return entire string
+  if (spaceIndex === -1) return str;
+
+  // Return everything before the first space
+  return str.slice(0, spaceIndex);
+}
+
 
 	
 
